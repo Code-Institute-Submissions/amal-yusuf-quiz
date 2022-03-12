@@ -64,7 +64,7 @@ let questionIndex = 0;
 // declaring answer options varibale 
 let options = document.getElementById("options");
 
-// declaring the score varibale 
+// The score varibale 
 let score = 0;
 
 // Get the start button and add event listener to it to start the quiz
@@ -84,7 +84,22 @@ function startQuiz() {
 // and displaying the question with the options to the user 
 
 function showQuestion() {
+// Show questions and options
+let question = document.getElementById("question");
+let A = document.getElementById('btn0');
+let B = document.getElementById('btn1');
+let C = document.getElementById('btn2');
 
+// declaring question number variable 
+let questionNumber = document.getElementById("qno");
+
+
+let questionElement = questions[questionIndex];
+
+question.innerHTML = questionElement.question;
+A.innerHTML = questionElement.A;
+B.innerHTML = questionElement.B;
+C.innerHTML = questionElement.C;
 
     
 };
