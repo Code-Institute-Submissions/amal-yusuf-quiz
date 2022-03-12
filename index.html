@@ -5,43 +5,43 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css?family=Raleway%7CRighteous" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Quiz</title>
 </head>
 
 <body>
+    <!--Heading and Quiz container section-->
+    <div id="container" class="quiz-container">
+        <h1>Quiz</h1>
+        <div id="start">Start Quiz</div>
+        <div id="quiz" style="display:none">
 
+            <!-- Question section-->
+            <div id="question">
+                <div id="qno">Question 1 of 5</div>
+            </div>
 
+            <!--Buttons and Options and check answer section-->
+            <div id="options" class="buttons">
+                <button class="btn" id="btn0" onclick="checkAnswer('A')"></button>
+                <button class="btn" id="btn1" onclick="checkAnswer('B')"></button>
+                <button class="btn" id="btn2" onclick="checkAnswer('C')"></button>
+            </div>
+
+            <!--Progress section-->
+            <div id="progress">
+                <p>Question<span id="qno">of 5</span></p>
+            </div>
+        </div>
+    </div>
+
+    <!--Scoring and Results section-->
+    <div id="score-container" style="display:none">
+    </div>
     <script src="assets/js/script.js"></script>
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
