@@ -101,7 +101,8 @@ A.innerHTML = questionElement.A;
 B.innerHTML = questionElement.B;
 C.innerHTML = questionElement.C;
 
-    
+showProgress();
+   
 };
 
 /*This function helps to iterate through questions with its options 
@@ -109,6 +110,11 @@ C.innerHTML = questionElement.C;
 
 function showProgress() {
 
+let progress = document.getElementById("progress");
+
+for (let i = 0; i < questions[questionIndex].options; i++) {
+    progress.innerHTML += questions[questionIndex].options[i];
+}
     
 };
 
