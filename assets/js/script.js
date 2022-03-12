@@ -121,19 +121,66 @@ for (let i = 0; i < questions[questionIndex].options; i++) {
 // If the answer is correct, give the selected option a green color
 
 function isCorrect() {
-   
+    options.style.backgroundColor = "green";
 
 };
 
 // if the answer is wrong, give the selected option red color
 
 function isWrong() {
-   
+    options.style.backgroundColor = "red";
 };
 
-function checkAnswer() {
-    
 
+/* This function helps the user to select the answer 
+from the options. We are using the options variable as the argument 
+to check whether the user is giving us the correct answer or not
+*/
+
+function checkAnswer(options) {
+    
+    if (options === questions[questionIndex].correctAnswer) {
+        alert("Correct Answer! :D");
+        // this.style.backgroundColor = "green"
+
+        score++;
+        // isCorrect();
+
+    } else {
+        alert("Answer is Inccorect! :(");
+        // this.style.backgroundColor = "red";
+        // isWrong();
+    }
+
+    // If the user has not exceeded the numbers of questions given 
+    // we show the next question 
+
+    if (questionIndex < questions.length - 1) {
+
+        questionIndex++;
+        showQuestion();
+        showProgress();
+
+    } else {
+        //Alrert Quiz is completed, show the results to the user and retake quiz
+
+        alert("Quiz is Completed!");
+
+        // declare the score container varible and display the reults area 
+
+        let scoreContainer = document.getElementById("score-container");
+        scoreContainer.style.display = "block";
+
+        // Add event listener to restart the quiz and reneder the questions on page load event
+        window.addEventListener("load", startQuiz);
+
+        // declaring Quiz container variable 
+        let quizContainer = document.getElementById("container");
+
+        //Show results, and retake quiz via the restart quiz link 
+        quizContainer.innerHTML = `<h1> Results </h1>
+        <h3 id="score">You Scored:${score} of ${questions.length}</h3><button class="restart btn"><a href="index.html">Restart Quiz </a></button>`;
+    }
         
 
 };
