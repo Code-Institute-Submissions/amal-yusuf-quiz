@@ -56,3 +56,76 @@ let questions = [{
 }
 ];
 
+// Defining the quiz global variables 
+
+// array question index variable 
+let questionIndex = 0;
+
+// declaring answer options varibale 
+let options = document.getElementById("options");
+
+// declaring the score varibale 
+let score = 0;
+
+// Get the start button and add event listener to it to start the quiz
+let startButton = document.getElementById("start");
+startButton.addEventListener("click", startQuiz);
+
+// Start the Quiz function
+function startQuiz() {
+
+    start.style.display = "none";
+    
+    let quiz = document.getElementById("quiz"); 
+    quiz.style.display = "block";
+};
+
+//  Declaring the question and the options variables, 
+// and displaying the question with the options to the user 
+
+function showQuestion() {
+
+
+    
+};
+
+/*This function helps to iterate through questions with its options 
+  and display it to the user*/
+
+function showProgress() {
+
+    
+};
+
+// If the answer is correct, give the selected option a green color
+
+function isCorrect() {
+   
+
+};
+
+// if the answer is wrong, give the selected option red color
+
+function isWrong() {
+   
+};
+
+function checkAnswer() {
+    
+
+        
+
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
