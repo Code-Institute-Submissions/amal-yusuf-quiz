@@ -38,6 +38,8 @@ https://8000-amalyusuf-quiz-avle7wfxa2m.ws-eu34.gitpod.io/index.html
 ![image](https://user-images.githubusercontent.com/91415085/158040412-a0b50fc9-888c-42a5-9dae-af5882e28ba2.png)
 
 
+I have taken My Mentor Nishant Kumar's advise, who has also looked at my code to check for mistakes and gave valuable advice to do few changes which I have implemented. I have mentioned the details on the credit section below 
+
 I've also have checked this project through the W3C HTML validator and it passes.
 No errors were returned when passing through the official W3C validator 
 ![image](https://user-images.githubusercontent.com/91415085/158039726-7a1882c4-ac77-406f-9bf5-09540b1599c4.png)
@@ -78,6 +80,8 @@ The site was deployed to GitHub pages. The steps to deploy are as follow:
  
  
  # Credits 
+ 
+My mentor Nishant Kumar has advised to use the const variable instead of using let variable for declaring variables that I havent used them, as that is a good practice that I should always follow.
  
  # Content 
  
