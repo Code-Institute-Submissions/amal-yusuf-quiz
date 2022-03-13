@@ -1,108 +1,98 @@
 ![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
 
-Welcome amal-yusuf,
+# Quiz Game Website 
+This quiz is a very practical and informative way to learn about a subject. The quiz is about testing your basic knowledge about the three front-end programming languages (html, css, and js) based on a total of 5 different questions. The site is targeted toward users who are looking to test their basic knowledge about programming and have fun at the same time by taking part of the quiz. This website is aiming to enhance the users knowledge both adults and children by providing useful information in a very fun and interactive way.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+![image](https://user-images.githubusercontent.com/91415085/158038177-89fa1ddd-f612-4007-b7af-f8dc636efca2.png)
+http://ami.responsivedesign.is/?url=https%3A%2F%2Famal-yusuf.github.io%2Fquiz%2F#
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+# Features 
+## Existing Features
+### Heading 
+The heading shows the quiz name which clearing tells the user what type of game.
+### Start Quiz Button
+This feature shows up as a button with clear instructions within it (Start Quiz) at the middle of the first page and it direct the user to the quiz questions area once the user has clicked on it
 
-## Gitpod Reminders
+https://amal-yusuf.github.io/quiz/index.html
+![image](https://user-images.githubusercontent.com/91415085/158038618-21c4b42a-42a2-4d1e-ab61-b107100440c6.png)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+### Next Feature is the questions area 
+There are 5 different questions, each question has 3 options to choose from, once the user has selected the an option for the first question an alert system will appear to notify the user if answer is correct or wrong, and It will navigate to the next question on the following page and so on, till reach the results section. The question is written in a clear font and the 3 options for each question are showing in buttons as per below images:
+![image](https://user-images.githubusercontent.com/91415085/158038812-5a3293d9-94d3-4baf-beff-9293717f44c6.png)
+![image](https://user-images.githubusercontent.com/91415085/158039004-6c87ec37-3e01-47b5-b5ad-20f36ce9a354.png)
+![image](https://user-images.githubusercontent.com/91415085/158039013-22752562-d0bf-42cd-ace5-9b21bbfe0783.png)
+![image](https://user-images.githubusercontent.com/91415085/158039023-f305fa63-a14b-407b-a6a2-a8b9b4a36def.png)
+![image](https://user-images.githubusercontent.com/91415085/158039037-7f9fc0b8-3fd6-43bb-930b-711349dcb5e0.png)
 
-`python3 -m http.server`
+### Next feature is the score-container area 
+This section shows the results as a heading at the top of the page, the scores in the middle, and the retake Quiz below the scores. 
+At the end of the fifth question, the user will be navigated to the results area which shows the number of correct answers out of the totals, and the user can retake the quiz via clicking the restart quiz link provided as per below:
+![image](https://user-images.githubusercontent.com/91415085/158039224-8327ac23-ada4-4e1e-8b45-5709fc4627ba.png)
 
-A blue button should appear to click: _Make Public_,
+# Testing 
 
-Another blue button should appear to click: _Open Browser_.
+I have done testing to my code and checked all the features are working efficiently. 
+I have run a lighthouse check on the project to inspect if there are any problems with accessibility, performance, and user experience
+and I can confirm that the colors and fonts used are easy to read and accessible as per below link:
+https://8000-amalyusuf-quiz-avle7wfxa2m.ws-eu34.gitpod.io/index.html
+![image](https://user-images.githubusercontent.com/91415085/158040412-a0b50fc9-888c-42a5-9dae-af5882e28ba2.png)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
 
-A blue button should appear to click: _Make Public_,
+I've also have checked this project through the W3C HTML validator and it passes.
+No errors were returned when passing through the official W3C validator 
+![image](https://user-images.githubusercontent.com/91415085/158039726-7a1882c4-ac77-406f-9bf5-09540b1599c4.png)
+https://validator.w3.org/nu/#textarea
 
-Another blue button should appear to click: _Open Browser_.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+I have also checked it through the W3C CSS validator:
+No errors were found when passing through the official (Jigsaw) validator
+![image](https://user-images.githubusercontent.com/91415085/158039680-edbe5ff9-b235-49eb-8a24-f517b9b76cbd.png)
+https://jigsaw.w3.org/css-validator/validator
 
-To log into the Heroku toolbelt CLI:
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+JS 
+https://jshint.com/
+![image](https://user-images.githubusercontent.com/91415085/158039769-19f4e396-3f29-486c-8311-913958904a54.png)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
 
-------
+I can confirm that the quiz results are always correct 
+I can confirm that the header, instructions, questions, options, and results are all readable and easy to understand 
+I have tested playing this quiz in different browsers: Chrome, Firefox, Safari
+I confirmed that this project is responsive, looks good and functions on all standard screen sizes using the devtools device toolbar
+![image](https://user-images.githubusercontent.com/91415085/158038177-89fa1ddd-f612-4007-b7af-f8dc636efca2.png)
+http://ami.responsivedesign.is/?url=https%3A%2F%2Famal-yusuf.github.io%2Fquiz%2F#
 
-## Release History
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+# Bugs
+When I have deployed my project I have discovered that on JS file the isCorrect and isWrong functions did not work properly, the way I was intending was to change the button color to either green or red depending on the answer if it is correct or wrong. I was running out of time. So alternatively I have created the alert system to alert the user with the correct and incorrect answers. And I have placed comments on the two functions on my project.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+# Unfixed Bugs
+No unfixed bugs
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+# Deployment
+The site was deployed to GitHub pages. The steps to deploy are as follow:
+ 1- In the GitHub repository, navigate to the settings tab
+ 2- From the source section drop-down menu, select the Master Branch
+ 3- Once the master branch has been selected, the page provided the link to the completed website.
+ The live link can be found here: https://amal-yusuf.github.io/quiz/
+ 
+ 
+ # Credits 
+ 
+ # Content 
+ 
+The quiz materials were taken from: href="https://www.w3schools.com/quiztest/"
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+# Media 
+No images were used on this project 
+ 
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
-
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
-
-------
-
-## FAQ about the uptime script
-
-**Why have you added this script?**
-
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
-
-**How will this affect me?**
-
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
-
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
-
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
-
-**So….?**
-
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
-
-**Can I opt out?**
-
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
-
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
-
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
